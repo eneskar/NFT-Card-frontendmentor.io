@@ -1,0 +1,111 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.card-img{
+    position: relative;
+    height: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 375px;
+    width: 100%;
+    border-radius: 20px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.card-img:hover .overlay{
+    opacity: 0.5;
+}
+
+.icon{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+.card h2 a{
+    color: white;
+    text-decoration: none;
+}
+
+.card h2 a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.card-info p{
+    color: hsl(215, 51%, 70%);
+}
+
+.card-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.eth{
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth div img{
+    margin-right: 5px;
+}
+
+.eth div{
+    display: flex;
+    align-items: center;
+}
+
+.eth :first-child p{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.card-avatar{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.card-avatar img{
+    width: 10%;
+    margin-right: 20px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.card-avatar p span{
+    color: hsl(215, 51%, 70%);
+}
+
+.card-avatar p a{
+    color: white;
+    text-decoration: none;
+}
+
+.card-avatar p a:hover{
+    color: hsl(178, 100%, 50%);
+}
